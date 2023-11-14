@@ -20,9 +20,10 @@ fun ConstraintLayoutSample(
     val constraints = ConstraintSet {
         val greenBox = createRefFor("greenbox")
         val redBox = createRefFor("redbox")
-        createHorizontalChain(greenBox, redBox, chainStyle = ChainStyle.Spread)
+        val guideLine = createGuidelineFromTop(0.5f)
+        createHorizontalChain(greenBox, redBox, chainStyle = ChainStyle.Packed)
         constrain(greenBox) {
-            top.linkTo(parent.top)
+            top.linkTo(guideLine)
             start.linkTo(parent.start)
             width = Dimension.value(100.dp)
             height = Dimension.value(100.dp)
@@ -32,6 +33,7 @@ fun ConstraintLayoutSample(
             start.linkTo(greenBox.end)
             end.linkTo(parent.end)
             width = Dimension.value(100.dp)
+//            width = Dimension.fillToConstraints
             height = Dimension.value(100.dp)
         }
     }
