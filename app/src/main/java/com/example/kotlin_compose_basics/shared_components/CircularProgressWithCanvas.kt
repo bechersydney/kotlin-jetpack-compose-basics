@@ -47,6 +47,7 @@ fun CircularProgressCanvas(
         animationPlayed = true;
     }
     // this is sydney master
+    // added sydney local_1
     Box(
         contentAlignment = Alignment.Center,
         modifier = modifier.size(radius * 2f)
