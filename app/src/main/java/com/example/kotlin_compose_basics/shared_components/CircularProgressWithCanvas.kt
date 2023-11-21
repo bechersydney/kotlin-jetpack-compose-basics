@@ -61,6 +61,7 @@ fun CircularProgressCanvas(
                 style = Stroke(strokeWidth.toPx(), cap = StrokeCap.Round)
             )
         }
+        // this is sydney local
         Text(
             text = (curPercentage.value * number).toInt().toString(),
             style = TextStyle(
