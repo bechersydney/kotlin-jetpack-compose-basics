@@ -2,6 +2,7 @@ package com.example.kotlin_compose_basics.ui.screens
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import android.widget.EditText
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -67,8 +68,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.kotlin_compose_basics.R
+import com.example.kotlin_compose_basics.shared_components.CircularProgressCanvas
 import com.example.kotlin_compose_basics.shared_components.ConstraintLayoutSample
 import com.example.kotlin_compose_basics.shared_components.ListItemSample
+import com.example.kotlin_compose_basics.shared_components.SimpleAnimation
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 import kotlin.random.Random
@@ -138,7 +141,18 @@ class MainActivity : ComponentActivity() {
 //            TextFieldButtonsSnackBarSample()
 //            ScrollableColumn()
 //            LazyColumSample(fontFamily = fontFamily, modifier = Modifier.background(Color.Red))
-            ConstraintLayoutSample()
+//            ConstraintLayoutSample()
+//            SimpleAnimation()
+//            Box(
+//                modifier = Modifier.fillMaxSize(),
+//                contentAlignment = Alignment.Center
+//            ) {
+//
+//                CircularProgressCanvas(
+//                    percentage = .80f,
+//                    number = 100
+//                )
+//            }
         }
 
     }
