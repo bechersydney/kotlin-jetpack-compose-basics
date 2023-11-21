@@ -43,6 +43,8 @@ fun CircularProgressCanvas(
             delayMillis = animDelay,
         )
     )
+
+    // this is changes from tiu local
     LaunchedEffect(key1 = true) {
         animationPlayed = true;
     }
