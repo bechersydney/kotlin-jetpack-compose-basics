@@ -32,6 +32,7 @@ fun CircularProgressCanvas(
     animDelay: Int = 0,
     percentage: Float = 0f
 ) {
+    // changes from test 1
     var animationPlayed by remember {
         mutableStateOf(false)
     }
