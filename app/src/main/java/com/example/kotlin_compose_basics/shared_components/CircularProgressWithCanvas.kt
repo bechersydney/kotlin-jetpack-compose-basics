@@ -46,6 +46,7 @@ fun CircularProgressCanvas(
 
     // this is changes from tiu local
     // changes from master for tiu
+    // changes after tiu_local 1
     LaunchedEffect(key1 = true) {
         animationPlayed = true;
     }
