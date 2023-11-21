@@ -37,6 +37,8 @@ fun CircularProgressCanvas(
         mutableStateOf(false)
     }
 
+    // this is test changes
+
     val curPercentage = animateFloatAsState(
         targetValue = if (animationPlayed) percentage else 0f,
         animationSpec = tween(
