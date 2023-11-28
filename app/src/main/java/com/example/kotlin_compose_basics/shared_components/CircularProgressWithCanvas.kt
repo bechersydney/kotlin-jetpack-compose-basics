@@ -32,13 +32,13 @@ fun CircularProgressCanvas(
     animDelay: Int = 0,
     percentage: Float = 0f
 ) {
+    // this is new change from newtest1
     // changes from test 1
     var animationPlayed by remember {
         mutableStateOf(false)
     }
 
     // this is test changes
-
     val curPercentage = animateFloatAsState(
         targetValue = if (animationPlayed) percentage else 0f,
         animationSpec = tween(
